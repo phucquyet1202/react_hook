@@ -4,11 +4,14 @@ import Nav from './components/nav_bar/nav';
 import { useState } from 'react';
 
 function App() {
+  // destructoring 
   const [name, setName] = useState('react by Quyet')
+  // name = 'react by Quyet'
   const handelEven = () => {
-    console.log(name);
+    // console.log(name);
     const result = document.getElementById('input').value
     setName(result)
+    // đặt lại name = giá trị của result và re-render lại component
   }
   return (
     <div className="App">
